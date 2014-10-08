@@ -1,4 +1,4 @@
-class Morpion
+class Morpion # Morpion == Tic Tac Toe (in French) ;)!
     
    def initialize  
       create_grid
@@ -70,7 +70,7 @@ class Morpion
    
    def game_checker # checking all possible winning combination
         end_game = false
-        # condition is whether cells are equal to each other and not empty!
+        # condition is: whether cells are equal to each other and not empty!
         if    ((@grid['1'] == @grid['2'] && @grid['1'] == @grid['3']) && (@grid['1'] != ' ' && @grid['2'] != ' ' && @grid['3'] != ' ')) 
             end_game=true
             victory=@grid['1']
